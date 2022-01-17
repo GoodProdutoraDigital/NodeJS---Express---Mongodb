@@ -11,5 +11,3 @@ Body-parser
 Connect-flash
 Passport
 Bcryptjs
-
-https://exe-blogapp.herokuapp.com/

@@ -33,10 +33,12 @@ module.exports = function(passport){
 
     //Dados serão guardados em sessão ao realizar login
     passport.serializeUser((usuario, done) => {
+        console.log('passport : serialize')
         done(null, usuario.id)
     })
 
     passport.deserializeUser((id, done) => {
+        console.log('passport : deserialize')
         Usuario.findById(id, (error, usuario) => {
             done(error, usuario)
         })

@@ -26,7 +26,7 @@ router.post('/registro', (req, res) => {
         erros.push({texto: 'Senha inválida'})
     }
     if(req.body.senha.length < 8){
-        erros.push({texto: 'Senha deve conter no minimo 8 digitos'})
+        erros.push({texto: 'Senha deve conter no mínimo 8 dígitos'})
     }
     if(req.body.senha != req.body.senha2){
         erros.push({texto: 'A senha deve ser igual'})

@@ -5,7 +5,7 @@ require('../models/Categoria')
 require('../models/Postagem')
 //utilizando helpers
 const {admin} = require('../helpers/_auth')
-//ref model a variavel
+//ref model a variável
 const Categoria = mongoose.model('categorias')
 const Postagem = mongoose.model('postagens')
 const router = express.Router()

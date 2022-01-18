@@ -5,7 +5,7 @@ module.exports = {
         if(req.isAuthenticated() && req.user.admin == 1){
             return next()
         }
-        req.flash('error_msg', 'Necessário nivel administrador')
+        req.flash('error_msg', 'Necessário nível administrador')
         res.redirect('/')        
     }
 }
